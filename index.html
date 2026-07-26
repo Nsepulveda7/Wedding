@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4f5843" />
+  <title>Nico & Sara | Nuestra Boda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar">
+      <div class="logo">♡</div>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#evento">Evento</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#galeria">Galería</a>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
+      <button id="theme-button">🌙 Modo oscuro</button>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Nico <span>&</span> Sara</h1>
+      <div class="divider"><span></span>♥<span></span></div>
+      <h2>¡Nos casamos!</h2>
+      <p>Con mucha alegría queremos invitarte a celebrar con nosotros uno de los días más importantes de nuestras vidas.</p>
+      <div class="hero-info">
+        <p>📅 24 de Octubre de 2026</p>
+        <p>📍 2740 Van Buren St, Hollywood, FL 33020</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="verse-card revealable" id="versiculo">
+      <p class="verse-mark">✝</p>
+      <blockquote>“Aunque uno pueda ser vencido, dos pueden resistir. ¡La cuerda de tres hilos no se rompe fácilmente!”</blockquote>
+      <p class="verse-reference">Eclesiastés 4:12</p>
+    </section>
+
+    <section class="countdown-card revealable">
+      <h2>Cuenta regresiva para nuestro gran día</h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">0</strong><span>Días</span></div>
+        <div><strong id="hours">0</strong><span>Horas</span></div>
+        <div><strong id="minutes">0</strong><span>Minutos</span></div>
+        <div><strong id="seconds">0</strong><span>Segundos</span></div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card revealable" id="historia">
+        <h2>Nuestra Historia</h2>
+        <div class="small-divider">♥</div>
+        <p>Desde que nos conocimos, supimos que había algo especial entre nosotros.</p>
+        <p>Hemos compartido risas, aventuras, aprendizajes y sueños que hoy se convierten en realidad.</p>
+        <p>Este es el comienzo de nuestra mejor historia: la que escribiremos juntos, de la mano, por el resto de nuestras vidas.</p>
+        <p class="signature">Nico & Sara</p>
+      </article>
+
+      <article class="card revealable" id="evento">
+        <h2>Detalles del Evento</h2>
+        <div class="small-divider">♥</div>
+        <p><strong>Fecha:</strong><br>Sábado, 24 de Octubre de 2026</p>
+        <p><strong>Hora:</strong><br>7:00 PM<br><small>Recepción a seguir</small></p>
+        <p><strong>Lugar:</strong><br>2740 Van Buren St,<br>Hollywood, FL 33020</p>
+        <a class="btn" href="https://maps.google.com/?q=2740+Van+Buren+St+Hollywood+FL+33020" target="_blank">Ver ubicación en Maps</a>
+      </article>
+
+      <article class="card revealable" id="rsvp">
+        <h2>Confirma tu Asistencia</h2>
+        <div class="small-divider">♥</div>
+        <p>Por favor confirma tu asistencia antes del 24 de Septiembre de 2026.</p>
+        <form id="rsvp-form">
+          <input type="text" id="name" placeholder="Nombre completo" required>
+          <input type="email" id="email" placeholder="Correo electrónico" required>
+          <select id="guests" required>
+            <option value="">Número de invitados</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+          </select>
+          <button class="btn" type="submit">Confirmar asistencia</button>
+        </form>
+        <p id="rsvp-message"></p>
+      </article>
+    </section>
+
+    <section class="gallery revealable" id="galeria">
+      <h2>Galería</h2>
+      <div class="small-divider">♥</div>
+      <div class="gallery-grid">
+        <img src="images/foto1.jpeg" alt="Nico y Sara">
+        <img src="images/foto2.jpeg" alt="Nico y Sara">
+        <img src="images/foto3.jpeg" alt="Familia">
+        <img src="images/foto4.jpeg" alt="Nico, Sara y su perro">
+        <img src="images/foto5.jpeg" alt="Compromiso">
+        <img src="images/foto6.jpeg" alt="Nico, Sara y su perro">
+        <img src="images/foto7.jpeg" alt="Familia">
+        <img src="images/foto8.jpeg" alt="Nico y Sara">
+        <img src="images/foto9.jpeg" alt="Nico y Sara">
+      </div>
+    </section>
+
+    <section class="extras revealable">
+      <div>
+        <h3>Dress Code</h3>
+        <p>Semi formal. Tonos oliva, salvia, nude, mauve y rosa empolvado.</p>
+      </div>
+      <div>
+        <h3>Regalos</h3>
+        <p>Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros, habrá mesa de regalos.</p>
+      </div>
+      <div>
+        <h3>Nota Importante</h3>
+        <p>Lo más importante para nosotros es compartir este día contigo. ¡Gracias por acompañarnos!</p>
+      </div>
+    </section>
+
+    <section class="location revealable" id="ubicacion">
+      <h2>Ubicación</h2>
+      <div class="small-divider">♥</div>
+      <p>2740 Van Buren St, Hollywood, FL 33020</p>
+      <a class="btn" href="https://maps.google.com/?q=2740+Van+Buren+St+Hollywood+FL+33020" target="_blank">Abrir en Google Maps</a>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Nico & Sara</h2>
+    <p>24 de Octubre de 2026 • 7:00 PM • Hollywood, FL</p>
+    <p>Hecho con ♥ para nuestro gran día</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
